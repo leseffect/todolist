@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Coding | AI와 지휘하는 미래형 개발 패러다임</title>
+  <meta name="description" content="개발자는 지휘하고, AI는 연주합니다. 코드를 한 줄도 타이핑하지 않고 생각과 프롬프트만으로 완성하는 미래형 개발 스타일, 바이브 코딩(Vibe Coding)을 직접 시뮬레이션하고 테스트해보세요.">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Dynamic Glowing Background -->
+  <div class="glowing-bg-elements">
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo" id="site-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle;">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span>VIBE CODING</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" id="nav-about">소개</a></li>
+          <li><a href="#simulator" id="nav-simulator">시뮬레이터</a></li>
+          <li><a href="#quiz" id="nav-quiz">바이브 테스트</a></li>
+          <li><a href="#quote" id="nav-quote">철학</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button class="audio-toggle" id="audio-toggle-btn" title="사운드 켜기/끄기" aria-label="Toggle Sound Effects">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="audio-icon-muted">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <line x1="23" y1="9" x2="17" y2="15"/>
+            <line x1="17" y1="9" x2="23" y2="15"/>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="audio-icon-playing" style="display: none;">
+            <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container" id="hero-section">
+      <div class="badge" id="hero-badge">THE FUTURE OF SOFTWARE DEVELOPMENT</div>
+      <h1 id="hero-title">
+        코드를 지휘하라,<br>
+        <span class="highlight">바이브 코딩</span>
+      </h1>
+      <p class="lead" id="hero-lead">
+        개발자가 한 줄씩 타이핑하던 시대는 지났습니다. 이제 당신은 오케스트라의 지휘자가 되어 전체적인 아키텍처와 방향성인 '바이브'를 결정하고, 복잡한 구현은 AI에게 완벽하게 일임합니다.
+      </p>
+      <div class="btn-group">
+        <a href="#simulator" class="btn btn-primary" id="btn-start-simulator">
+          시뮬레이션 체험하기
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+        <a href="#quiz" class="btn btn-secondary" id="btn-start-quiz-scroll">내 개발 레벨은?</a>
+      </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="section-padding container" id="about">
+      <div class="section-header">
+        <h2 id="about-title">바이브 코딩의 3대 요소</h2>
+        <p id="about-subtitle">AI 오케스트라가 완벽한 선율을 연주할 수 있도록 이끄는 핵심 메커니즘</p>
+      </div>
+      <div class="grid-3">
+        <!-- Card 1 -->
+        <div class="concept-card" id="card-conductor">
+          <div class="concept-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+            </svg>
+          </div>
+          <h3>지휘자 (The Conductor)</h3>
+          <p>개발자는 요구사항을 조율하고 비즈니스 논리와 사용자 경험(UX)을 책임집니다. 사소한 구현 문법에 얽매이지 않고 높은 수준의 설계를 담당합니다.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="concept-card" id="card-instrument">
+          <div class="concept-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3>연주자 (The Instrument)</h3>
+          <p>초대형 인공지능 언어 모델(LLM)이 개발자의 지시를 받아 실제 컴퓨터 언어로 코드를 연주합니다. 디버깅, 최적화, 기능 구현이 순식간에 처리됩니다.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="concept-card" id="card-harmony">
+          <div class="concept-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 12h8"/>
+              <path d="M12 8v8"/>
+            </svg>
+          </div>
+          <h3>조화 (The Harmony)</h3>
+          <p>지휘자와 연주자 간의 끊임없는 피드백 루프입니다. 에러 메세지를 건네며 상호 보완하고, 요구 사항을 시각적으로 구현해나가는 정교한 협업입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simulator Section -->
+    <section class="section-padding simulator-section" id="simulator">
+      <div class="container">
+        <div class="simulator-layout">
+          <!-- Text controls -->
+          <div class="simulator-controls">
+            <h2>바이브 시뮬레이터</h2>
+            <p>다양한 바이브를 선택해 보세요. AI가 당신의 지시를 받아 페이지의 스타일과 구성 요소를 그 자리에서 '바이브 코딩'해 냅니다.</p>
+            
+            <div class="vibe-selector">
+              <div class="vibe-option active" data-vibe="cosmic" id="vibe-opt-cosmic">
+                <div class="vibe-info">
+                  <h4>Cosmic Dream</h4>
+                  <p>우주와 신비로운 성운 느낌의 몽환적인 퍼플 테마</p>
+                </div>
+                <div class="vibe-dot"></div>
+              </div>
+              <div class="vibe-option" data-vibe="cyberpunk" id="vibe-opt-cyberpunk">
+                <div class="vibe-info">
+                  <h4>Cyberpunk Neon</h4>
+                  <p>네온 핑크와 시안 블루가 충돌하는 사이버 테크 테마</p>
+                </div>
+                <div class="vibe-dot"></div>
+              </div>
+              <div class="vibe-option" data-vibe="retro" id="vibe-opt-retro">
+                <div class="vibe-info">
+                  <h4>Retro Grid</h4>
+                  <p>아날로그 감성의 주황빛 그리드와 오렌지 레트로 테마</p>
+                </div>
+                <div class="vibe-dot"></div>
+              </div>
+              <div class="vibe-option" data-vibe="matrix" id="vibe-opt-matrix">
+                <div class="vibe-info">
+                  <h4>Matrix Hack</h4>
+                  <p>녹색 터미널 문자가 쏟아지는 사이버 시뮬레이션 테마</p>
+                </div>
+                <div class="vibe-dot"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code screen graphic -->
+          <div class="code-screen" id="editor-screen">
+            <div class="screen-header">
+              <div class="dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="screen-title" id="editor-title">vibe-interpreter.js</div>
+              <div style="width: 42px;"></div>
+            </div>
+            <div class="screen-body" id="editor-body">
+              <div class="terminal-line">
+                <span class="prompt-prefix">></span>
+                <span class="typed-prompt" id="prompt-display">바이브 코딩 시뮬레이터 활성화 완료. 테마를 선택하세요.</span><span class="pulse-cursor" id="cursor-indicator"></span>
+              </div>
+              <div class="editor-output" id="editor-code-output">
+// 시스템 대기 중...
+// 테마 옵션을 선택하면 AI 코딩 엔진이 실행됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section-padding container" id="quiz">
+      <div class="section-header">
+        <h2>바이브 코더 성향 테스트</h2>
+        <p>몇 가지 간단한 질문을 통해 당신이 미래 소프트웨어 개발 생태계에서 어떤 레벨의 개발자일지 알아보세요.</p>
+      </div>
+
+      <div class="quiz-container" id="quiz-box">
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quiz-progress-indicator"></div>
+        </div>
+
+        <!-- Start Step -->
+        <div class="quiz-step active" id="quiz-step-start">
+          <div style="text-align: center; padding: 2rem 0;">
+            <div style="font-size: 4rem; margin-bottom: 1.5rem;">🔮</div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; font-family: var(--font-title);">내 안의 바이브 확인하기</h3>
+            <p style="margin-bottom: 2.5rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+              당신은 전통적인 타이피스트일까요, 아니면 AI 오케스트라의 총지휘자일까요? 테스트를 통해 확인해보세요.
+            </p>
+            <button class="btn btn-primary" id="btn-quiz-start" style="margin: 0 auto;">테스트 시작하기</button>
+          </div>
+        </div>
+
+        <!-- Question 1 -->
+        <div class="quiz-step" data-question="1" id="quiz-step-q1">
+          <div class="quiz-question-num">Question 01</div>
+          <div class="quiz-question">새로운 소형 웹 브라우저 앱을 만들어야 할 때, 당신의 첫 행동은?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-score="1" id="q1-opt1">VS Code를 켜고 HTML/CSS 보일러플레이트를 직접 타이핑하기 시작한다.</button>
+            <button class="quiz-option" data-score="3" id="q1-opt2">인터넷에서 관련 프레임워크 템플릿 코드를 찾아 복사해서 붙여넣는다.</button>
+            <button class="quiz-option" data-score="5" id="q1-opt3">AI에게 내 구상을 구어로 상세하게 말하며 바탕 뼈대 코드를 통째로 짜달라고 한다.</button>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="quiz-step" data-question="2" id="quiz-step-q2">
+          <div class="quiz-question-num">Question 02</div>
+          <div class="quiz-question">코딩 도중 예기치 못한 에러 메세지를 마주쳤을 때, 당신의 행동은?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-score="1" id="q2-opt1">공식 도큐먼트나 StackOverflow에서 작동 원리를 꼼꼼히 검색해 분석한다.</button>
+            <button class="quiz-option" data-score="3" id="q2-opt2">에러 난 줄의 코드를 지웠다 다시 쓰면서 우연히 되기를 바란다.</button>
+            <button class="quiz-option" data-score="5" id="q2-opt3">에러 로그 전체를 AI에게 던진 뒤 "왜 이래? 당장 고쳐줘"라고 프롬프트한다.</button>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="quiz-step" data-question="3" id="quiz-step-q3">
+          <div class="quiz-question-num">Question 03</div>
+          <div class="quiz-question">"바이브 코딩(Vibe Coding)"이라는 용어를 들었을 때 느끼는 솔직한 생각은?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-score="1" id="q3-opt1">"기초도 모르는 사람들이 하는 야매 코딩이겠지." (부정적/회의적)</button>
+            <button class="quiz-option" data-score="3" id="q3-opt2">"재밌는 컨셉이지만, 복잡한 시스템 구현에는 한계가 있을 거야." (조심스러움)</button>
+            <button class="quiz-option" data-score="5" id="q3-opt3">"바로 이거다! 이게 진정한 미래 개발 프로세스의 정수다." (적극 수용)</button>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="quiz-step" data-question="4" id="quiz-step-q4">
+          <div class="quiz-question-num">Question 04</div>
+          <div class="quiz-question">내가 생각하는 이상적인 소프트웨어 개발자의 핵심 역량은?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" data-score="1" id="q4-opt1">어떤 복잡한 알고리즘도 막힘없이 손코딩할 수 있는 문법 암기 능력</button>
+            <button class="quiz-option" data-score="3" id="q4-opt2">기획부터 배포까지 혼자 다양한 도구를 적절히 융합해내는 풀스택 감각</button>
+            <button class="quiz-option" data-score="5" id="q4-opt3">원하는 결과물을 AI에게 정확하게 묘사하고 설계 지시를 내리는 아키텍처와 조율력</button>
+          </div>
+        </div>
+
+        <!-- Result Step -->
+        <div class="quiz-step" id="quiz-step-result">
+          <div class="quiz-result-view">
+            <div class="result-badge" id="quiz-result-emoji">🧙‍♂️</div>
+            <h3 class="result-title" id="quiz-result-title">바이브의 제왕</h3>
+            <p class="result-desc" id="quiz-result-desc">
+              로딩 중... 당신의 바이브 레벨을 분석하고 있습니다.
+            </p>
+            <button class="btn btn-secondary" id="btn-quiz-retry" style="margin: 0 auto;">테스트 다시하기</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Quote Section -->
+    <section class="section-padding quote-section" id="quote">
+      <div class="container">
+        <div class="quote-wrapper">
+          <div class="quote-icon">“</div>
+          <blockquote class="quote-text" id="quote-main">
+            나는 단지 바이브(Vibe)를 제공할 뿐이고,<br>코딩은 AI가 다 합니다.
+          </blockquote>
+          <div class="quote-author" id="quote-author-name">Andrej Karpathy</div>
+          <div class="quote-author-title" id="quote-author-desc">Former Tesla Director of AI & OpenAI Co-founder</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo" id="footer-logo-text">VIBE CODING</div>
+      <ul class="footer-links">
+        <li><a href="#about" id="footer-about">소개</a></li>
+        <li><a href="#simulator" id="footer-simulator">시뮬레이터</a></li>
+        <li><a href="#quiz" id="footer-quiz">테스트</a></li>
+      </ul>
+      <p class="copyright" id="footer-copyright">&copy; 2026 Vibe Coding. Developed with AI for the future.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
